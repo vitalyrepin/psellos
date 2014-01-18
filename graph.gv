@@ -20,7 +20,7 @@ digraph dynasty {
 	maria -> mikhv
 	zoya -> konstv [style = dotted, label = "муж 3"]
 	feodora -> mikhvi [style = "dotted", headlabel = "преемник",labeldistance=6, labelangle=35]
-	mikhv -> isaaki [style = "dotted", label = " восстание"]
+	mikhvi -> isaaki [style = "dotted", label = " восстание"]
 	isaaki -> konstx [style = "dotted", label = " преемник"]
 	konstx -> evdokia [style = "dotted", dir = "back", label = "муж 1"]
 	evdokia -> romanx [style = "dotted", label = "муж 2"]
