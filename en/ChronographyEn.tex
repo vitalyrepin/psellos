@@ -1,0 +1,94 @@
+\documentclass[a4paper]{article}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{cmap}
+\usepackage{ccicons}
+\usepackage{hyperxmp}
+\usepackage[colorlinks,linkcolor=blue,unicode]{hyperref}
+\usepackage[left=1cm, right=1cm, top=1cm, bottom=1cm]{geometry}
+\usepackage{tikz}
+\usepackage{xspace}
+\usepackage{graphicx}
+\pdfinclusioncopyfonts=1 
+
+\newcommand{\myhref}[2]{\textcolor{blue}{\href{#1}{\textcolor{blue}{#2}}}}
+
+\hypersetup{%
+pdftitle={%
+Rulers of  Byzantine Empire in XI century. Based on Chronographia by Michael Psellus},
+pdfauthor={Vitaly Repin},
+pdfcopyright={This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License},
+pdfsubject={Rulers of  Byzantine Empire in XI century. Based on Chronographia by Michael Psellus},
+pdfkeywords={Byzantine,Psellos},
+pdflicenseurl={http://creativecommons.org/licenses/by-sa/3.0/},
+pdfcaptionwriter={Vitaly Repin},
+pdfcontactcity={Espoo},
+pdfcontactcountry={Finland},
+pdfcontactemail={vitaly.repin@gmail.com},
+pdflang={en}
+}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\centerline{\textsc{\bf\large Rulers of  Byzantine Empire in XI century}}
+\centerline{\sc\small Based on ,,Chronographia'' by Michael Psellus}
+\vspace*{-.8cm}
+
+\centerline{\includegraphics{graph}}
+
+\definecolor{myblue}{HTML}{0EBFE9}
+%% Adapted from: http://tex.stackexchange.com/questions/7032/good-way-to-make-textcircled-numbers
+%% Can be used only inzide tikzpicture environment
+\newcommand{\circled}[2]{\node[shape=circle,draw,inner sep=1pt,fill=myblue,font=\small] at (#1) {\textcolor{white}{#2}};}
+%% Dtand-alone version of the command \circled
+\newcommand{\circledd}[1]{\raisebox{-.1cm}{\begin{tikzpicture}\circled{0,0}{#1}\end{tikzpicture}}\xspace}
+
+\newcounter{it}
+\setcounter{it}{1}
+\newcommand{\nitem}{\circledd{\arabic{it}}\addtocounter{it}{1}}
+
+\centerline{%
+\begin{tabular}{|l|l|l|}
+\hline
+\bf Ruler&\bf Reign& \bf Lifetime\\
+\hline
+\nitem Basil II the Porphyrogenitus &11.01.976 -- 15.12.1025&958 -- 15.12.1025\\
+\hline
+\nitem Constantine VIII &16.12.1025 -- 11.11.1028 & 960 -- 15.11.1028\\
+\hline
+\nitem Romanos III Argyros & 12.11.1028 -- 11.04.1034 &968 -- 11.04.1034\\
+\hline
+\nitem Michael IV the Paphlagonian & 11.04.1034 - 10.12.1041 & 1010 -- 10.12.1041\\
+\hline
+\nitem Michael V Kalaphates & 11.12.1041 -- 22.04.1042 & 1015 -- 24.08.1042\\
+\hline
+\nitem Zoe, Theodora  & 22.04.1042 -- 11.06.1042 &\\
+\hline
+\nitem Constantine IX Monomachos & 11.06.1042 -- 08.01.1055 &1000 -- 11.01.1055\\
+\hline
+\nitem Theodora & 08.01.1055 -- 31.08.1056 & 984 -- 31.08.1056\\
+\hline
+\nitem Michael VI Stratiotikos & 08.1056 -- 03.09.1057 & ? -- 1059\\
+\hline
+\nitem Isaac I Komnenos &04.09.1057 -- 22.11.1059 & 1005 -- 31.05.1061\\
+\hline
+\nitem Constantine X Doukas & 23.11.1059 -- 23.05.1067 & 1006 -- 23.05.1067\\
+\hline
+\nitem Eudokia Makrembolitissa & 23.05.1067 -- 01.01.1068 & 1021 -- 1096\\
+\hline
+\nitem Romanos IV Diogenes & 01.01.1068 -- 01.10.1071 & 1030 -- 1072\\
+\hline
+\nitem Michael VII Doukas &01.11.1071 -- 24.03.1078 & 1050 -- 1090\\
+\hline
+\end{tabular}}
+
+\noindent\begin{thebibliography}{9}
+\bibitem{psell} Michael Psellus, Chronographia.
+\end{thebibliography}
+
+\centerline{\small \ccbysa\ Vitaly Repin, 2014. This work is licensed under a \myhref{http://creativecommons.org/licenses/by-sa/3.0/}{Creative Commons Attribution-ShareAlike 3.0 Unported License.}}
+
+\end{document}
