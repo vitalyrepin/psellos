@@ -11,19 +11,19 @@ digraph dynasty {
 	romanii -> konstviii
 	konstviii -> feodora
 	konstviii -> zoya
-	zoya -> romaniii [style = dotted, label = "муж"]
+	zoya -> romaniii [style = dotted, label = "муж 1"]
 	konstviii -> romaniii [style = dotted, label = "зять"]
-	zoya -> mikhiv [style = dotted, label = "муж"]
+	zoya -> mikhiv [style = dotted, label = "муж 2"]
 	mikhiv -> maria [label = "сестра"]
 	mikhiv -> mikhv [style = dotted, label = "племянник"]
 	zoya -> mikhv [style = dotted, label = " усыновление"]
 	maria -> mikhv
-	zoya -> konstv [style = dotted, label = "муж"]
+	zoya -> konstv [style = dotted, label = "муж 3"]
 	feodora -> mikhvi [style = "dotted", headlabel = "преемник",labeldistance=6, labelangle=35]
 	mikhv -> isaaki [style = "dotted", label = " восстание"]
 	isaaki -> konstx [style = "dotted", label = " преемник"]
-	konstx -> evdokia [style = "dotted", label = "жена"]
-	evdokia -> romanx [style = "dotted", label = "муж"]
+	konstx -> evdokia [style = "dotted", dir = "back", label = "муж 1"]
+	evdokia -> romanx [style = "dotted", label = "муж 2"]
 	evdokia -> mikhvii
 	konstx -> mikhvii
 	romanx -> mikhvii [style = "dotted", label = "пленение Диогена"]
