@@ -1,0 +1,47 @@
+digraph dynasty {
+	size="6,6";
+	node [fillcolor=lightblue1, style=filled, shape=rectangle];
+	{rank = same; maria; mikhiv; }
+	{rank = same; mikhv; konstv; }
+	{rank = same; feodora; zoya; romaniii;}
+	{rank = same; mikhvi; mikhv;}
+	{rank = same; konstx; evdokia; romanx;}
+
+	romanii -> vasilyii
+	romanii -> konstviii
+	konstviii -> feodora
+	konstviii -> zoya
+	zoya -> romaniii [style = dotted, label = "make 1"]
+	konstviii -> romaniii [style = dotted, label = "svärson"]
+	zoya -> mikhiv [style = dotted, label = "make 2"]
+	mikhiv -> maria [label = "syster"]
+	mikhiv -> mikhv [style = dotted, label = "systerson"]
+	zoya -> mikhv [style = dotted, label = " adopteradson"]
+	maria -> mikhv
+	zoya -> konstv [style = dotted, label = "make 3"]
+	feodora -> mikhvi [style = "dotted", headlabel = "utsedd arvinge", labeldistance=10, labelangle=35]
+	mikhvi -> isaaki [style = "dotted", label = " revolt"]
+	isaaki -> konstx [style = "dotted", label = " utsedd arvinge"]
+	konstx -> evdokia [style = "dotted", dir = "back", label = "make 1"]
+	evdokia -> romanx [style = "dotted", label = "make 2"]
+	evdokia -> mikhvii
+	konstx -> mikhvii
+	romanx -> mikhvii [style = "dotted", label = "Alp Arslan satt Diogenes i fångenskap"]
+
+	romanii [label = "Romanos II\n&#9733; 938 - 15.03.963\n&#9818; 09.11.959 - 15.03.963"]
+	vasilyii [label = "&#x2460; Basileios II \n&#9733; 958 - 15.12.1025\n&#9818; 11.01.976 - 15.12.1025"]
+	konstviii [label = "&#x2461; Konstantin VIII\n&#9733; 960 - 15.11.1028\n&#9818; 16.12.1025 - 11.11.1028"]
+	zoya [label= "&#x2465; Zoë Porphyrogenita\n&#9733; 978 - 06.1050\n&#9818; 22.04.1042 - 11.06.1042", fillcolor=lightpink1]
+	feodora [label = "&#x2465;, &#x2467; Theodora\n&#9733; 984 - 31.08.1056\n&#9818; 22.04.1042 - 11.06.1042\n &#9818; 08.01.1055 - 31.08.1056", fillcolor=lightpink1]
+	romaniii [label = "&#x2462; Romanos III Argyros\n&#9733; 968 - 11.04.1034\n&#9818; 12.11.1028 - 11.04.1034"]
+	mikhiv [label = "&#x2463; Mikael IV Paflagoniern\n&#9733; 1010 - 10.12.1041\n&#9818; 11.04.1034 - 10.12.1041"]
+	maria [label = "Maria", fillcolor=lightpink1]
+	mikhv [label = "&#x2464; Mikael V\n&#9733; 1015 - 24.08.1042\n&#9818; 11.12.1041 - 22.04.1042"]
+	konstv [label = "&#x2466; Konstantin IX Monomachos\n&#9733; 1000 - 11.01.1055\n&#9818; 11.06.1042 - 08.01.1055"]
+        mikhvi [label = "&#x2468; Mikael VI\n&#9733; ? - 1059\n&#9818; 08.1056 - 03.09.1057"]
+	isaaki [label = "&#x2469; Isak I Komnenos\n&#9733; 1005 - 31.05.1061\n&#9818; 04.09.1057 - 22.11.1059"]
+	konstx [label = "&#x246A; Konstantin X Dukas\n&#9733; 1006 - 23.05.1067\n&#9818; 23.11.1059 - 23.05.1067"]
+	evdokia [label = "&#x246B; Eudokia Makrembolitissa\n&#9733; 1021 - 1096\n&#9818; 23.05.1067 - 01.01.1068", fillcolor=lightpink1]
+	romanx [label = "&#x246C; Romanos IV Diogenes\n&#9733; 1030 - 1072\n&#9818;  01.01.1068 - 01.10.1071"]
+	mikhvii [label = "&#x246D; Mikael VII Ducas\n&#9733; 1050 - 1090\n&#9818; 01.11.1071 - 24.03.1078"]
+}
